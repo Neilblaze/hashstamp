@@ -1,0 +1,42 @@
+{
+  "name": "hashstamp",
+  "version": "1.0.0",
+  "description": "Create a hash of the current timestamp",
+  "license": "MIT",
+  "repository": "Neilblaze/hashstamp",
+  "author": {
+    "name": "Pratyay Banerjee",
+    "email": "putubanerjee23@gmail.com",
+    "url": "https://neilblaze.live"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@neilblaze"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "test": "xo && nyc ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "hash",
+    "timestamp",
+    "crypto"
+  ],
+  "dependencies": {
+    "is-timestamp": "^1.0.0",
+    "isomorphic-crypto": "^3.0.0"
+  },
+  "parser": "@babel/eslint-parser",
+  "devDependencies": {
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  }
+}
