@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Create a hash of the current timestamp",
   "license": "MIT",
-  "repository": "Neilblaze/hashstamp",
+  "repository": "https://github.com/neilblaze/hashstamp",
   "author": {
     "name": "Pratyay Banerjee",
     "email": "putubanerjee23@gmail.com",
