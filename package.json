@@ -1,5 +1,5 @@
 {
-  "name": "hashstamp",
+  "name": "@neilblaze/hashstamp",
   "version": "1.0.0",
   "description": "Create a hash of the current timestamp",
   "license": "MIT",
@@ -9,8 +9,13 @@
     "email": "putubanerjee23@gmail.com",
     "url": "https://neilblaze.live"
   },
+  "main": "index.js",
+  "scripts": {
+    "release": "np --contents=pkg",
+    "postpublish": "npm publish pkg --ignore-scripts --@neilblaze:registry='https://registry.npmjs.org'"
+  },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@neilblaze"
+    "access": "public"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
